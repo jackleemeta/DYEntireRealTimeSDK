@@ -1,0 +1,6 @@
+.DS_Store
+DYRealTimeSDK.xcworkspace/xcuserdata/
+Pods/
+
+DYRealTimeSDK.xcodeproj/xcuserdata/
+*/.DS_Store

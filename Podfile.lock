@@ -1,0 +1,46 @@
+PODS:
+  - AgoraRtcEngine_iOS (2.9.0.105)
+  - AgoraRtm_iOS (1.3.0)
+  - CocoaAsyncSocket (7.6.4)
+  - CocoaLumberjack/Core (3.6.1)
+  - CocoaLumberjack/Swift (3.6.1):
+    - CocoaLumberjack/Core
+  - CocoaMQTT (1.1.3):
+    - CocoaAsyncSocket (~> 7.6.3)
+  - Device (3.2.1)
+  - TXIMSDK_iOS (4.7.2)
+  - TXLiteAVSDK_TRTC (7.9.21016)
+
+DEPENDENCIES:
+  - AgoraRtcEngine_iOS (= 2.9.0.105)
+  - AgoraRtm_iOS (= 1.3.0)
+  - CocoaLumberjack/Swift (= 3.6.1)
+  - CocoaMQTT (= 1.1.3)
+  - Device
+  - TXIMSDK_iOS (= 4.7.2)
+  - TXLiteAVSDK_TRTC (= 7.9.21016)
+
+SPEC REPOS:
+  trunk:
+    - AgoraRtcEngine_iOS
+    - AgoraRtm_iOS
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+    - CocoaMQTT
+    - Device
+    - TXIMSDK_iOS
+    - TXLiteAVSDK_TRTC
+
+SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: 1dac3efda6c9e78506a3eb00b8a496cdd89bee82
+  AgoraRtm_iOS: 1b14a6f89c82ff2f6c82a25d805b3705a83a2d5d
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  CocoaMQTT: b506d38ad3bbe1c55a4f8ee8c9fd02c35da1a7d8
+  Device: 0738862dd8a30856b4bd9e21cb9b728873d21392
+  TXIMSDK_iOS: 0d3c292920c96ba08b6fa8efde65c7488eb436a7
+  TXLiteAVSDK_TRTC: 17f8cb9bf9436ef2026c071cb52165a0f9b1ca0f
+
+PODFILE CHECKSUM: af456be9c667be01b21b0756d1edbcba67050317
+
+COCOAPODS: 1.9.1

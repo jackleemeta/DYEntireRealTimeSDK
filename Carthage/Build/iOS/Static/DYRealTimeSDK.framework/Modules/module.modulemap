@@ -1,0 +1,11 @@
+framework module DYRealTimeSDK {
+  umbrella header "DYRealTimeSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module DYRealTimeSDK.Swift {
+    header "DYRealTimeSDK-Swift.h"
+    requires objc
+}

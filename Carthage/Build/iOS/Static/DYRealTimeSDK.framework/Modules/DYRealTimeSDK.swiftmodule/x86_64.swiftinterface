@@ -1,0 +1,251 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target x86_64-apple-ios8.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DYRealTimeSDK
+import AgoraRtcEngineKit
+import AgoraRtmKit
+import CocoaLumberjack
+import CocoaMQTT
+@_exported import DYRealTimeSDK
+import Device
+import Foundation
+import ImSDK
+import Swift
+import TXLiteAVSDK_TRTC
+import UIKit
+public protocol DYRealTimeSDKProtocol : AnyObject {
+  func joinRoom(isSuccess: Swift.Bool, uid: Swift.String)
+  func videoSizeParsed(uid: Swift.String)
+  func viewForLocalVideo() -> UIKit.UIView
+  func viewForRemoteVideo(uid: Swift.String) -> UIKit.UIView
+  func userDidCloseVideo(uid: Swift.String, isMuted: Swift.Bool)
+  func sentMessage(isSuccess: Swift.Bool, uid: Swift.String, msgId: Swift.String, msg: Swift.String)
+  func receivedMessage(uid: Swift.String, msgId: Swift.String, msg: Swift.String)
+  func leftRoom(uid: Swift.String, reason: DYRealTimeSDK.DYRealTimeSDKLeaveReason)
+  func onNetworkQuality(uid: Swift.String, quality: DYRealTimeSDK.DYRealTimeSDKNetworkQuality)
+  func onConnectStatus(status: DYRealTimeSDK.DYRealTimeSDKConnectStatus, message: Swift.String)
+  func audioRestarted()
+  func parseMSGID_UID_ROOMIDFor(message: Swift.String) -> DYRealTimeSDK.DYMessageKeys
+  func parseType(forMessage message: Swift.String) -> ObjectiveC.NSObject?
+  func onError(code: Swift.String, message: Swift.String)
+}
+extension Array : DYRealTimeSDK.DYJsonObjectProtocol {
+}
+extension String {
+  public var jsonData: Foundation.Data? {
+    get
+  }
+  public var jsonObject: Any? {
+    get
+  }
+}
+extension Dictionary : DYRealTimeSDK.DYJsonObjectProtocol {
+}
+public typealias DYMessageKeys = (msgId: Swift.String?, uid: Swift.String?, roomId: Swift.String?)
+public typealias DYTopic = Swift.String
+public struct DYRealTimeSDKAuthenticationConfig {
+  public var sdkId: Swift.String
+  public var sdkSign: Swift.String
+  public var sdkSignalSign: Swift.String
+  public var expired_time: Swift.Int
+  public init()
+}
+public struct DYRealTimeSDKUserConfig {
+  public var roomId: Swift.String
+  public var account: Swift.String
+  public init()
+}
+public struct DYRealTimeSettingConfig {
+  public struct DYMQTTConfig {
+    public var host: Swift.String?
+    public var port: Swift.Int?
+    public var keepAlive: Swift.Int?
+    public var clientId: Swift.String?
+    public var username: Swift.String?
+    public var password: Swift.String?
+    public var topics: [DYRealTimeSDK.DYTopic]?
+    public init()
+  }
+  public struct DYTIMConfig {
+    public var appId: Swift.String?
+    public var sign: Swift.String
+    public init()
+  }
+  public var mqttConfig: DYRealTimeSDK.DYRealTimeSettingConfig.DYMQTTConfig?
+  public var timConfig: DYRealTimeSDK.DYRealTimeSettingConfig.DYTIMConfig?
+  public var messgeTypeOfJoinRoom: ObjectiveC.NSObject?
+  public var messgeTypeOfLeftRoom: ObjectiveC.NSObject?
+  public var timeOffSet: Swift.Int64?
+  public init()
+}
+extension DYRealTimeSDKUserConfig {
+  public var isLegalMe: Swift.Bool {
+    get
+  }
+}
+public enum DYRealTimeSDKType : Swift.Int {
+  case old_trtc
+  case agora
+  case agora_live
+  case zego
+  case trtc
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct DYRealTimeSDKPipe : Swift.OptionSet {
+  public let rawValue: Swift.UInt
+  public init(rawValue: Swift.UInt)
+  public static let mqtt: DYRealTimeSDK.DYRealTimeSDKPipe
+  public static let tim: DYRealTimeSDK.DYRealTimeSDKPipe
+  public static let rtc: DYRealTimeSDK.DYRealTimeSDKPipe
+  public static let signal: DYRealTimeSDK.DYRealTimeSDKPipe
+  public static let all: DYRealTimeSDK.DYRealTimeSDKPipe
+  public typealias Element = DYRealTimeSDK.DYRealTimeSDKPipe
+  public typealias ArrayLiteralElement = DYRealTimeSDK.DYRealTimeSDKPipe
+  public typealias RawValue = Swift.UInt
+}
+public enum DYRealTimeSDKNetworkQuality : Swift.String {
+  case good
+  case medium
+  case bad
+  case unknown
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+public enum DYRealTimeSDKLeaveReason : Swift.Int {
+  case voluntary
+  case extrusion
+  case offline
+  case ignore
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum DYRealTimeSDKConnectStatus : Swift.String {
+  case connecting
+  case succeed
+  case failed
+  case disconnected
+  case recovery
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+public struct DYRealTimeSDKBaseInformation {
+  public var sdkVersion: Swift.String?
+  public var thirdRtcSDKType: DYRealTimeSDK.DYRealTimeSDKType?
+  public var thirdRtcSDKName: Swift.String?
+  public var thirdRtcVersion: Swift.String?
+  public init()
+}
+extension Data {
+  public var jsonString: Swift.String? {
+    get
+  }
+  public var jsonObject: Any? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class MyApp {
+  public static var displayName: Swift.String {
+    get
+  }
+  public static var bundleId: Swift.String {
+    get
+  }
+  public static var version: Swift.String {
+    get
+  }
+  public static var build: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DYRealTimeSDK {
+  final public var sdk: DYRealTimeSDK.DYRealTimeSDKType? {
+    get
+  }
+  final public var authConfig: DYRealTimeSDK.DYRealTimeSDKAuthenticationConfig {
+    get
+  }
+  final public var userConfig: DYRealTimeSDK.DYRealTimeSDKUserConfig {
+    get
+  }
+  final public class var baseInformation: DYRealTimeSDK.DYRealTimeSDKBaseInformation {
+    get
+  }
+  final public class var isDestroyed: Swift.Bool {
+    get
+  }
+  public init(sdk: DYRealTimeSDK.DYRealTimeSDKType, authenticationConfig: DYRealTimeSDK.DYRealTimeSDKAuthenticationConfig, settingConfig: DYRealTimeSDK.DYRealTimeSettingConfig, userConfig: DYRealTimeSDK.DYRealTimeSDKUserConfig, delegate: DYRealTimeSDK.DYRealTimeSDKProtocol)
+  final public func engine()
+  final public func reengine()
+  final public func leaveRoom(_ callBack: ((Swift.Bool) -> ())? = nil)
+  final public func destroy(_ callBack: ((Swift.Bool) -> ())? = nil)
+  @objc deinit
+}
+extension DYRealTimeSDK {
+  final public func sendMessage(msgId: Swift.String, msg: Swift.String, receiverIds: Swift.Set<Swift.String>? = nil, topic: DYRealTimeSDK.DYTopic? = nil, pipe: DYRealTimeSDK.DYRealTimeSDKPipe = .all)
+  final public func setWillMessage(msg: Swift.String, forTopic topic: DYRealTimeSDK.DYTopic)
+}
+extension DYRealTimeSDK {
+  final public func `switch`(to sdk: DYRealTimeSDK.DYRealTimeSDKType, with auth: DYRealTimeSDK.DYRealTimeSDKAuthenticationConfig? = nil, switchedCallBack: ((Swift.Bool) -> ())? = nil)
+  final public func `switch`(to userConfig: DYRealTimeSDK.DYRealTimeSDKUserConfig, with auth: DYRealTimeSDK.DYRealTimeSDKAuthenticationConfig? = nil, switchedCallBack: ((Swift.Bool) -> ())? = nil)
+}
+extension DYRealTimeSDK {
+  final public func startAudioMixing(_ filePath: Swift.String!, loopback: Swift.Bool, replace: Swift.Bool, cycle: Swift.Int, finishedCallBack: (() -> ())?)
+  final public func stopAudioMixing()
+  final public func pauseAudioMixing()
+  final public func resumeAudioMixing()
+  final public func adjustAudioMixingVolume(_ volume: Swift.Int)
+  final public func muteLocalVideoStream(_ mute: Swift.Bool)
+  final public func muteLocalAudioStream(_ status: Swift.Bool)
+}
+extension DYRealTimeSDK {
+  final public class func setLogFilePath(_ path: Swift.String)
+  final public class var ddFileLogger: CocoaLumberjack.DDFileLogger? {
+    get
+  }
+  final public class var sortedAgoraLogFileInfos: [CocoaLumberjack.DDLogFileInfo]? {
+    get
+  }
+  final public class var sortedTRTCLogFileInfos: [CocoaLumberjack.DDLogFileInfo]? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class DYRealTimeSDKActionLog {
+  public static var timeOffset: Swift.Int64?
+  public static var sdk: DYRealTimeSDK.DYRealTimeSDKType?
+  @objc deinit
+}
+public protocol DYJsonObjectProtocol {
+}
+extension DYJsonObjectProtocol {
+  public var jsonString: Swift.String? {
+    get
+  }
+  public var data: Foundation.Data? {
+    get
+  }
+}
+extension DYRealTimeSDK.DYRealTimeSDKType : Swift.Equatable {}
+extension DYRealTimeSDK.DYRealTimeSDKType : Swift.Hashable {}
+extension DYRealTimeSDK.DYRealTimeSDKType : Swift.RawRepresentable {}
+extension DYRealTimeSDK.DYRealTimeSDKNetworkQuality : Swift.Equatable {}
+extension DYRealTimeSDK.DYRealTimeSDKNetworkQuality : Swift.Hashable {}
+extension DYRealTimeSDK.DYRealTimeSDKNetworkQuality : Swift.RawRepresentable {}
+extension DYRealTimeSDK.DYRealTimeSDKLeaveReason : Swift.Equatable {}
+extension DYRealTimeSDK.DYRealTimeSDKLeaveReason : Swift.Hashable {}
+extension DYRealTimeSDK.DYRealTimeSDKLeaveReason : Swift.RawRepresentable {}
+extension DYRealTimeSDK.DYRealTimeSDKConnectStatus : Swift.Equatable {}
+extension DYRealTimeSDK.DYRealTimeSDKConnectStatus : Swift.Hashable {}
+extension DYRealTimeSDK.DYRealTimeSDKConnectStatus : Swift.RawRepresentable {}

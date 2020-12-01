@@ -1,0 +1,20 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "d40c6518b471a9c1490af04e185da4bc1032ddec",
+  "iOS" : [
+    {
+      "hash" : "791e993fe6edf205b1a592166067b56fdb27c7522d52a2f2d52acb495d7a3d14",
+      "name" : "DYRealTimeSDK",
+      "linking" : "static",
+      "swiftToolchainVersion" : "5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)"
+    }
+  ]
+}

@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003257C2189FC5DD740C5BA7 /* Pods_CommonTarget_DYRealTimeSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868F6BDD3E0283DB06691FB7 /* Pods_CommonTarget_DYRealTimeSDKDemo.framework */; };
+		C50506E423A610C700AF8F41 /* AgoraRtcCryptoLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50506DD23A610C700AF8F41 /* AgoraRtcCryptoLoader.framework */; };
+		C50506E523A610C700AF8F41 /* AgoraRtcCryptoLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50506DD23A610C700AF8F41 /* AgoraRtcCryptoLoader.framework */; };
+		C50506EA23A610C700AF8F41 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C50506E123A610C700AF8F41 /* libcrypto.a */; };
+		C50834F32459204100B38BEC /* DYRealTimeSDK+MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50834F22459204100B38BEC /* DYRealTimeSDK+MQTT.swift */; };
+		C50834F524594D4D00B38BEC /* DYRealTimeSDK+TIMKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50834F424594D4D00B38BEC /* DYRealTimeSDK+TIMKit.swift */; };
+		C517149424D2B4A100EAAFCA /* DYRealTimeSDKPipe+Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C517149324D2B4A100EAAFCA /* DYRealTimeSDKPipe+Enumerate.swift */; };
+		C517149524D2B4FA00EAAFCA /* DYRealTimeSDKPipe+Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C517149324D2B4A100EAAFCA /* DYRealTimeSDKPipe+Enumerate.swift */; };
+		C53E0F6623B0B655005E56E3 /* DYRealTimeSDKProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = C5DFD77423B09B4400CDA4CE /* DYRealTimeSDKProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53E0F6723B0B655005E56E3 /* DYRealTimeSDKHeaders.swift in Headers */ = {isa = PBXBuildFile; fileRef = C5DFD77523B09B4400CDA4CE /* DYRealTimeSDKHeaders.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53E0F6823B0B655005E56E3 /* MyApp.swift in Headers */ = {isa = PBXBuildFile; fileRef = C5DFD77623B09B4400CDA4CE /* MyApp.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53E0F6923B0B655005E56E3 /* DYRealTimeSDK.swift in Headers */ = {isa = PBXBuildFile; fileRef = C5DFD77723B09B4400CDA4CE /* DYRealTimeSDK.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53E0F6A23B0B66A005E56E3 /* Data+DYAdd.swift in Headers */ = {isa = PBXBuildFile; fileRef = C5DFD76023B09B4400CDA4CE /* Data+DYAdd.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53E0F6B23B0B66A005E56E3 /* String+DYAdd.swift in Headers */ = {isa = PBXBuildFile; fileRef = C5DFD76123B09B4400CDA4CE /* String+DYAdd.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53E0F6C23B0B66A005E56E3 /* Array+DYAdd.swift in Headers */ = {isa = PBXBuildFile; fileRef = C5DFD76223B09B4400CDA4CE /* Array+DYAdd.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53E0F6D23B0B66A005E56E3 /* Dictionary+DYAdd.swift in Headers */ = {isa = PBXBuildFile; fileRef = C5DFD76323B09B4400CDA4CE /* Dictionary+DYAdd.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53E0F6E23B0B66A005E56E3 /* DYJsonObjectProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = C5DFD76423B09B4400CDA4CE /* DYJsonObjectProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C54751CF23A3BBA2000EC25C /* DYRealTimeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C54751CD23A3BBA2000EC25C /* DYRealTimeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C55FAB6E246E3F120049704F /* DYRealTimeSDK+LogAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FAB6D246E3F120049704F /* DYRealTimeSDK+LogAdd.swift */; };
+		C55FAB6F246E3F120049704F /* DYRealTimeSDK+LogAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FAB6D246E3F120049704F /* DYRealTimeSDK+LogAdd.swift */; };
+		C575ED2423D3EF3000EED70C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C50506E123A610C700AF8F41 /* libcrypto.a */; };
+		C59B008C24D001EC006BBF18 /* DYRealTimeSDKDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59B008B24D001EC006BBF18 /* DYRealTimeSDKDataParser.swift */; };
+		C59B008D24D001EC006BBF18 /* DYRealTimeSDKDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59B008B24D001EC006BBF18 /* DYRealTimeSDKDataParser.swift */; };
+		C5DFD78323B09B4400CDA4CE /* Data+DYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76023B09B4400CDA4CE /* Data+DYAdd.swift */; };
+		C5DFD78423B09B4400CDA4CE /* Data+DYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76023B09B4400CDA4CE /* Data+DYAdd.swift */; };
+		C5DFD78523B09B4400CDA4CE /* String+DYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76123B09B4400CDA4CE /* String+DYAdd.swift */; };
+		C5DFD78623B09B4400CDA4CE /* String+DYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76123B09B4400CDA4CE /* String+DYAdd.swift */; };
+		C5DFD78723B09B4400CDA4CE /* Array+DYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76223B09B4400CDA4CE /* Array+DYAdd.swift */; };
+		C5DFD78823B09B4400CDA4CE /* Array+DYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76223B09B4400CDA4CE /* Array+DYAdd.swift */; };
+		C5DFD78923B09B4400CDA4CE /* Dictionary+DYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76323B09B4400CDA4CE /* Dictionary+DYAdd.swift */; };
+		C5DFD78A23B09B4400CDA4CE /* Dictionary+DYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76323B09B4400CDA4CE /* Dictionary+DYAdd.swift */; };
+		C5DFD78B23B09B4400CDA4CE /* DYJsonObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76423B09B4400CDA4CE /* DYJsonObjectProtocol.swift */; };
+		C5DFD78C23B09B4400CDA4CE /* DYJsonObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76423B09B4400CDA4CE /* DYJsonObjectProtocol.swift */; };
+		C5DFD78D23B09B4400CDA4CE /* DYRealTimeSDK+MYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76623B09B4400CDA4CE /* DYRealTimeSDK+MYAdd.swift */; };
+		C5DFD78E23B09B4400CDA4CE /* DYRealTimeSDK+MYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76623B09B4400CDA4CE /* DYRealTimeSDK+MYAdd.swift */; };
+		C5DFD78F23B09B4400CDA4CE /* TRTCManager+CallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76823B09B4400CDA4CE /* TRTCManager+CallBack.swift */; };
+		C5DFD79023B09B4400CDA4CE /* TRTCManager+CallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76823B09B4400CDA4CE /* TRTCManager+CallBack.swift */; };
+		C5DFD79323B09B4400CDA4CE /* TRTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76A23B09B4400CDA4CE /* TRTCManager.swift */; };
+		C5DFD79423B09B4400CDA4CE /* TRTCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76A23B09B4400CDA4CE /* TRTCManager.swift */; };
+		C5DFD79523B09B4400CDA4CE /* AgoraManager+SignalCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76C23B09B4400CDA4CE /* AgoraManager+SignalCallBack.swift */; };
+		C5DFD79623B09B4400CDA4CE /* AgoraManager+SignalCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76C23B09B4400CDA4CE /* AgoraManager+SignalCallBack.swift */; };
+		C5DFD79723B09B4400CDA4CE /* AgoraManager+Invoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76D23B09B4400CDA4CE /* AgoraManager+Invoke.swift */; };
+		C5DFD79823B09B4400CDA4CE /* AgoraManager+Invoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76D23B09B4400CDA4CE /* AgoraManager+Invoke.swift */; };
+		C5DFD79923B09B4400CDA4CE /* AgoraManager+CallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76E23B09B4400CDA4CE /* AgoraManager+CallBack.swift */; };
+		C5DFD79A23B09B4400CDA4CE /* AgoraManager+CallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76E23B09B4400CDA4CE /* AgoraManager+CallBack.swift */; };
+		C5DFD79B23B09B4400CDA4CE /* AgoraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76F23B09B4400CDA4CE /* AgoraManager.swift */; };
+		C5DFD79C23B09B4400CDA4CE /* AgoraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD76F23B09B4400CDA4CE /* AgoraManager.swift */; };
+		C5DFD79D23B09B4400CDA4CE /* DYRealTimeSDKCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77023B09B4400CDA4CE /* DYRealTimeSDKCodes.swift */; };
+		C5DFD79E23B09B4400CDA4CE /* DYRealTimeSDKCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77023B09B4400CDA4CE /* DYRealTimeSDKCodes.swift */; };
+		C5DFD79F23B09B4400CDA4CE /* DYRealTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77123B09B4400CDA4CE /* DYRealTimeManager.swift */; };
+		C5DFD7A023B09B4400CDA4CE /* DYRealTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77123B09B4400CDA4CE /* DYRealTimeManager.swift */; };
+		C5DFD7A123B09B4400CDA4CE /* DYRealTimeAppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77223B09B4400CDA4CE /* DYRealTimeAppKeys.swift */; };
+		C5DFD7A223B09B4400CDA4CE /* DYRealTimeAppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77223B09B4400CDA4CE /* DYRealTimeAppKeys.swift */; };
+		C5DFD7A323B09B4400CDA4CE /* DYRealTimeSDKProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77423B09B4400CDA4CE /* DYRealTimeSDKProtocol.swift */; };
+		C5DFD7A423B09B4400CDA4CE /* DYRealTimeSDKProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77423B09B4400CDA4CE /* DYRealTimeSDKProtocol.swift */; };
+		C5DFD7A523B09B4400CDA4CE /* DYRealTimeSDKHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77523B09B4400CDA4CE /* DYRealTimeSDKHeaders.swift */; };
+		C5DFD7A623B09B4400CDA4CE /* DYRealTimeSDKHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77523B09B4400CDA4CE /* DYRealTimeSDKHeaders.swift */; };
+		C5DFD7A723B09B4400CDA4CE /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77623B09B4400CDA4CE /* MyApp.swift */; };
+		C5DFD7A823B09B4400CDA4CE /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77623B09B4400CDA4CE /* MyApp.swift */; };
+		C5DFD7A923B09B4400CDA4CE /* DYRealTimeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77723B09B4400CDA4CE /* DYRealTimeSDK.swift */; };
+		C5DFD7AA23B09B4400CDA4CE /* DYRealTimeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77723B09B4400CDA4CE /* DYRealTimeSDK.swift */; };
+		C5DFD7AB23B09B4400CDA4CE /* DYRealTimeManager+VendoredSDKLogPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77923B09B4400CDA4CE /* DYRealTimeManager+VendoredSDKLogPath.swift */; };
+		C5DFD7AC23B09B4400CDA4CE /* DYRealTimeManager+VendoredSDKLogPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77923B09B4400CDA4CE /* DYRealTimeManager+VendoredSDKLogPath.swift */; };
+		C5DFD7AD23B09B4400CDA4CE /* DYRealTimeSDKActionLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77A23B09B4400CDA4CE /* DYRealTimeSDKActionLog.swift */; };
+		C5DFD7AE23B09B4400CDA4CE /* DYRealTimeSDKActionLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77A23B09B4400CDA4CE /* DYRealTimeSDKActionLog.swift */; };
+		C5DFD7AF23B09B4400CDA4CE /* DYRealTimeManager+LogAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77B23B09B4400CDA4CE /* DYRealTimeManager+LogAdd.swift */; };
+		C5DFD7B023B09B4400CDA4CE /* DYRealTimeManager+LogAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77B23B09B4400CDA4CE /* DYRealTimeManager+LogAdd.swift */; };
+		C5DFD7B123B09B4400CDA4CE /* DYRealTimeSDKActionLog+MYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77C23B09B4400CDA4CE /* DYRealTimeSDKActionLog+MYAdd.swift */; };
+		C5DFD7B223B09B4400CDA4CE /* DYRealTimeSDKActionLog+MYAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77C23B09B4400CDA4CE /* DYRealTimeSDKActionLog+MYAdd.swift */; };
+		C5DFD7B323B09B4400CDA4CE /* DYRealTimeSDKSignalKitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77E23B09B4400CDA4CE /* DYRealTimeSDKSignalKitProtocol.swift */; };
+		C5DFD7B423B09B4400CDA4CE /* DYRealTimeSDKSignalKitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77E23B09B4400CDA4CE /* DYRealTimeSDKSignalKitProtocol.swift */; };
+		C5DFD7B523B09B4400CDA4CE /* AgoraIMKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77F23B09B4400CDA4CE /* AgoraIMKit.swift */; };
+		C5DFD7B623B09B4400CDA4CE /* AgoraIMKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD77F23B09B4400CDA4CE /* AgoraIMKit.swift */; };
+		C5DFD7B723B09B4400CDA4CE /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD78023B09B4400CDA4CE /* MQTTManager.swift */; };
+		C5DFD7B823B09B4400CDA4CE /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD78023B09B4400CDA4CE /* MQTTManager.swift */; };
+		C5DFD7B923B09B4400CDA4CE /* MQTTSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD78123B09B4400CDA4CE /* MQTTSetting.swift */; };
+		C5DFD7BA23B09B4400CDA4CE /* MQTTSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD78123B09B4400CDA4CE /* MQTTSetting.swift */; };
+		C5DFD7BB23B09B4400CDA4CE /* TIMKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD78223B09B4400CDA4CE /* TIMKit.swift */; };
+		C5DFD7BC23B09B4400CDA4CE /* TIMKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DFD78223B09B4400CDA4CE /* TIMKit.swift */; };
+		C5E667B8245955FD008E112E /* DYRealTimeSDK+TIMKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50834F424594D4D00B38BEC /* DYRealTimeSDK+TIMKit.swift */; };
+		C5E667B924595617008E112E /* DYRealTimeSDK+MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50834F22459204100B38BEC /* DYRealTimeSDK+MQTT.swift */; };
+		C5F5301B23A60364000A7751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5301A23A60364000A7751 /* AppDelegate.swift */; };
+		C5F5301F23A60364000A7751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5301E23A60364000A7751 /* ViewController.swift */; };
+		C5F5302423A60364000A7751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5F5302323A60364000A7751 /* Assets.xcassets */; };
+		FC7E906CD5DE5472F3258FC6 /* Pods_CommonTarget_DYRealTimeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7E349C1E1F9D228AD67A6E /* Pods_CommonTarget_DYRealTimeSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F7E349C1E1F9D228AD67A6E /* Pods_CommonTarget_DYRealTimeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonTarget_DYRealTimeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3551C5239FD796F904BBB917 /* Pods-CommonTarget-DYRealTimeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonTarget-DYRealTimeSDK.debug.xcconfig"; path = "Target Support Files/Pods-CommonTarget-DYRealTimeSDK/Pods-CommonTarget-DYRealTimeSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		44793E73E399BFFE82F790F7 /* Pods-DYRealTimeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYRealTimeSDK.debug.xcconfig"; path = "Target Support Files/Pods-DYRealTimeSDK/Pods-DYRealTimeSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		60CD4E9044CD2F571BC3AE71 /* Pods-CommonTarget-DYRealTimeSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonTarget-DYRealTimeSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-CommonTarget-DYRealTimeSDKDemo/Pods-CommonTarget-DYRealTimeSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6169F3506B65637C7B8C7391 /* Pods-CommonTarget-DYRealTimeSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonTarget-DYRealTimeSDK.release.xcconfig"; path = "Target Support Files/Pods-CommonTarget-DYRealTimeSDK/Pods-CommonTarget-DYRealTimeSDK.release.xcconfig"; sourceTree = "<group>"; };
+		868F6BDD3E0283DB06691FB7 /* Pods_CommonTarget_DYRealTimeSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonTarget_DYRealTimeSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97114FF5B6DA607B50086B6 /* Pods-DYRealTimeSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYRealTimeSDK.release.xcconfig"; path = "Target Support Files/Pods-DYRealTimeSDK/Pods-DYRealTimeSDK.release.xcconfig"; sourceTree = "<group>"; };
+		C50506DD23A610C700AF8F41 /* AgoraRtcCryptoLoader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcCryptoLoader.framework; sourceTree = "<group>"; };
+		C50506E123A610C700AF8F41 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		C50834F22459204100B38BEC /* DYRealTimeSDK+MQTT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DYRealTimeSDK+MQTT.swift"; sourceTree = "<group>"; };
+		C50834F424594D4D00B38BEC /* DYRealTimeSDK+TIMKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DYRealTimeSDK+TIMKit.swift"; sourceTree = "<group>"; };
+		C517149324D2B4A100EAAFCA /* DYRealTimeSDKPipe+Enumerate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DYRealTimeSDKPipe+Enumerate.swift"; sourceTree = "<group>"; };
+		C54751CA23A3BBA2000EC25C /* DYRealTimeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DYRealTimeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54751CD23A3BBA2000EC25C /* DYRealTimeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYRealTimeSDK.h; sourceTree = "<group>"; };
+		C54751CE23A3BBA2000EC25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55FAB6D246E3F120049704F /* DYRealTimeSDK+LogAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DYRealTimeSDK+LogAdd.swift"; sourceTree = "<group>"; };
+		C5876376241F8BFD00EA7432 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		C59B008B24D001EC006BBF18 /* DYRealTimeSDKDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRealTimeSDKDataParser.swift; sourceTree = "<group>"; };
+		C5DFD76023B09B4400CDA4CE /* Data+DYAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+DYAdd.swift"; sourceTree = "<group>"; };
+		C5DFD76123B09B4400CDA4CE /* String+DYAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DYAdd.swift"; sourceTree = "<group>"; };
+		C5DFD76223B09B4400CDA4CE /* Array+DYAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+DYAdd.swift"; sourceTree = "<group>"; };
+		C5DFD76323B09B4400CDA4CE /* Dictionary+DYAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+DYAdd.swift"; sourceTree = "<group>"; };
+		C5DFD76423B09B4400CDA4CE /* DYJsonObjectProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYJsonObjectProtocol.swift; sourceTree = "<group>"; };
+		C5DFD76623B09B4400CDA4CE /* DYRealTimeSDK+MYAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DYRealTimeSDK+MYAdd.swift"; sourceTree = "<group>"; };
+		C5DFD76823B09B4400CDA4CE /* TRTCManager+CallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TRTCManager+CallBack.swift"; sourceTree = "<group>"; };
+		C5DFD76A23B09B4400CDA4CE /* TRTCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRTCManager.swift; sourceTree = "<group>"; };
+		C5DFD76C23B09B4400CDA4CE /* AgoraManager+SignalCallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AgoraManager+SignalCallBack.swift"; sourceTree = "<group>"; };
+		C5DFD76D23B09B4400CDA4CE /* AgoraManager+Invoke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AgoraManager+Invoke.swift"; sourceTree = "<group>"; };
+		C5DFD76E23B09B4400CDA4CE /* AgoraManager+CallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AgoraManager+CallBack.swift"; sourceTree = "<group>"; };
+		C5DFD76F23B09B4400CDA4CE /* AgoraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgoraManager.swift; sourceTree = "<group>"; };
+		C5DFD77023B09B4400CDA4CE /* DYRealTimeSDKCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRealTimeSDKCodes.swift; sourceTree = "<group>"; };
+		C5DFD77123B09B4400CDA4CE /* DYRealTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRealTimeManager.swift; sourceTree = "<group>"; };
+		C5DFD77223B09B4400CDA4CE /* DYRealTimeAppKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRealTimeAppKeys.swift; sourceTree = "<group>"; };
+		C5DFD77423B09B4400CDA4CE /* DYRealTimeSDKProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRealTimeSDKProtocol.swift; sourceTree = "<group>"; };
+		C5DFD77523B09B4400CDA4CE /* DYRealTimeSDKHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRealTimeSDKHeaders.swift; sourceTree = "<group>"; };
+		C5DFD77623B09B4400CDA4CE /* MyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
+		C5DFD77723B09B4400CDA4CE /* DYRealTimeSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRealTimeSDK.swift; sourceTree = "<group>"; };
+		C5DFD77923B09B4400CDA4CE /* DYRealTimeManager+VendoredSDKLogPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DYRealTimeManager+VendoredSDKLogPath.swift"; sourceTree = "<group>"; };
+		C5DFD77A23B09B4400CDA4CE /* DYRealTimeSDKActionLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRealTimeSDKActionLog.swift; sourceTree = "<group>"; };
+		C5DFD77B23B09B4400CDA4CE /* DYRealTimeManager+LogAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DYRealTimeManager+LogAdd.swift"; sourceTree = "<group>"; };
+		C5DFD77C23B09B4400CDA4CE /* DYRealTimeSDKActionLog+MYAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DYRealTimeSDKActionLog+MYAdd.swift"; sourceTree = "<group>"; };
+		C5DFD77E23B09B4400CDA4CE /* DYRealTimeSDKSignalKitProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRealTimeSDKSignalKitProtocol.swift; sourceTree = "<group>"; };
+		C5DFD77F23B09B4400CDA4CE /* AgoraIMKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgoraIMKit.swift; sourceTree = "<group>"; };
+		C5DFD78023B09B4400CDA4CE /* MQTTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
+		C5DFD78123B09B4400CDA4CE /* MQTTSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTSetting.swift; sourceTree = "<group>"; };
+		C5DFD78223B09B4400CDA4CE /* TIMKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TIMKit.swift; sourceTree = "<group>"; };
+		C5F5301823A60364000A7751 /* DYRealTimeSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYRealTimeSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F5301A23A60364000A7751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5F5301E23A60364000A7751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5F5302323A60364000A7751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5F5302823A60364000A7751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5F530C023A60484000A7751 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		CE6BAC1D888B4A5196732CB1 /* Pods-CommonTarget-DYRealTimeSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonTarget-DYRealTimeSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-CommonTarget-DYRealTimeSDKDemo/Pods-CommonTarget-DYRealTimeSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C54751C723A3BBA2000EC25C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50506EA23A610C700AF8F41 /* libcrypto.a in Frameworks */,
+				FC7E906CD5DE5472F3258FC6 /* Pods_CommonTarget_DYRealTimeSDK.framework in Frameworks */,
+				C50506E423A610C700AF8F41 /* AgoraRtcCryptoLoader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F5301523A60364000A7751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C575ED2423D3EF3000EED70C /* libcrypto.a in Frameworks */,
+				003257C2189FC5DD740C5BA7 /* Pods_CommonTarget_DYRealTimeSDKDemo.framework in Frameworks */,
+				C50506E523A610C700AF8F41 /* AgoraRtcCryptoLoader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		369D36E30F0618BD707336DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44793E73E399BFFE82F790F7 /* Pods-DYRealTimeSDK.debug.xcconfig */,
+				A97114FF5B6DA607B50086B6 /* Pods-DYRealTimeSDK.release.xcconfig */,
+				3551C5239FD796F904BBB917 /* Pods-CommonTarget-DYRealTimeSDK.debug.xcconfig */,
+				6169F3506B65637C7B8C7391 /* Pods-CommonTarget-DYRealTimeSDK.release.xcconfig */,
+				60CD4E9044CD2F571BC3AE71 /* Pods-CommonTarget-DYRealTimeSDKDemo.debug.xcconfig */,
+				CE6BAC1D888B4A5196732CB1 /* Pods-CommonTarget-DYRealTimeSDKDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C50506DC23A610C700AF8F41 /* Framewoks */ = {
+			isa = PBXGroup;
+			children = (
+				C50506DD23A610C700AF8F41 /* AgoraRtcCryptoLoader.framework */,
+			);
+			path = Framewoks;
+			sourceTree = "<group>";
+		};
+		C50506E023A610C700AF8F41 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C50506E123A610C700AF8F41 /* libcrypto.a */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		C517149224D2B48700EAAFCA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C517149324D2B4A100EAAFCA /* DYRealTimeSDKPipe+Enumerate.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C54751C023A3BBA2000EC25C = {
+			isa = PBXGroup;
+			children = (
+				C54751CC23A3BBA2000EC25C /* DYRealTimeSDK */,
+				C5F5301923A60364000A7751 /* DYRealTimeSDKDemo */,
+				C54751CB23A3BBA2000EC25C /* Products */,
+				369D36E30F0618BD707336DA /* Pods */,
+				F177620D1B3CEA0E1A0F538D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C54751CB23A3BBA2000EC25C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C54751CA23A3BBA2000EC25C /* DYRealTimeSDK.framework */,
+				C5F5301823A60364000A7751 /* DYRealTimeSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C54751CC23A3BBA2000EC25C /* DYRealTimeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C5DFD75E23B09B4400CDA4CE /* Source */,
+				C54751CD23A3BBA2000EC25C /* DYRealTimeSDK.h */,
+				C54751CE23A3BBA2000EC25C /* Info.plist */,
+				C50506DC23A610C700AF8F41 /* Framewoks */,
+				C50506E023A610C700AF8F41 /* Libraries */,
+			);
+			path = DYRealTimeSDK;
+			sourceTree = "<group>";
+		};
+		C5DFD75E23B09B4400CDA4CE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C5DFD75F23B09B4400CDA4CE /* Utils */,
+				C5DFD76523B09B4400CDA4CE /* RealTime */,
+				C5DFD77323B09B4400CDA4CE /* Headers */,
+				C5DFD77823B09B4400CDA4CE /* Log */,
+				C5DFD77D23B09B4400CDA4CE /* Signal */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C5DFD75F23B09B4400CDA4CE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C5DFD76023B09B4400CDA4CE /* Data+DYAdd.swift */,
+				C5DFD76123B09B4400CDA4CE /* String+DYAdd.swift */,
+				C5DFD76223B09B4400CDA4CE /* Array+DYAdd.swift */,
+				C5DFD76323B09B4400CDA4CE /* Dictionary+DYAdd.swift */,
+				C5DFD76423B09B4400CDA4CE /* DYJsonObjectProtocol.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C5DFD76523B09B4400CDA4CE /* RealTime */ = {
+			isa = PBXGroup;
+			children = (
+				C5DFD76623B09B4400CDA4CE /* DYRealTimeSDK+MYAdd.swift */,
+				C50834F424594D4D00B38BEC /* DYRealTimeSDK+TIMKit.swift */,
+				C50834F22459204100B38BEC /* DYRealTimeSDK+MQTT.swift */,
+				C5DFD76723B09B4400CDA4CE /* TRTC */,
+				C5DFD76B23B09B4400CDA4CE /* Agora */,
+				C5DFD77023B09B4400CDA4CE /* DYRealTimeSDKCodes.swift */,
+				C5DFD77123B09B4400CDA4CE /* DYRealTimeManager.swift */,
+				C5DFD77223B09B4400CDA4CE /* DYRealTimeAppKeys.swift */,
+			);
+			path = RealTime;
+			sourceTree = "<group>";
+		};
+		C5DFD76723B09B4400CDA4CE /* TRTC */ = {
+			isa = PBXGroup;
+			children = (
+				C5DFD76823B09B4400CDA4CE /* TRTCManager+CallBack.swift */,
+				C5DFD76A23B09B4400CDA4CE /* TRTCManager.swift */,
+			);
+			path = TRTC;
+			sourceTree = "<group>";
+		};
+		C5DFD76B23B09B4400CDA4CE /* Agora */ = {
+			isa = PBXGroup;
+			children = (
+				C5DFD76C23B09B4400CDA4CE /* AgoraManager+SignalCallBack.swift */,
+				C5DFD76D23B09B4400CDA4CE /* AgoraManager+Invoke.swift */,
+				C5DFD76E23B09B4400CDA4CE /* AgoraManager+CallBack.swift */,
+				C5DFD76F23B09B4400CDA4CE /* AgoraManager.swift */,
+			);
+			path = Agora;
+			sourceTree = "<group>";
+		};
+		C5DFD77323B09B4400CDA4CE /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C517149224D2B48700EAAFCA /* Extension */,
+				C5DFD77423B09B4400CDA4CE /* DYRealTimeSDKProtocol.swift */,
+				C5DFD77523B09B4400CDA4CE /* DYRealTimeSDKHeaders.swift */,
+				C5DFD77623B09B4400CDA4CE /* MyApp.swift */,
+				C5DFD77723B09B4400CDA4CE /* DYRealTimeSDK.swift */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		C5DFD77823B09B4400CDA4CE /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C5DFD77923B09B4400CDA4CE /* DYRealTimeManager+VendoredSDKLogPath.swift */,
+				C5DFD77A23B09B4400CDA4CE /* DYRealTimeSDKActionLog.swift */,
+				C5DFD77B23B09B4400CDA4CE /* DYRealTimeManager+LogAdd.swift */,
+				C5DFD77C23B09B4400CDA4CE /* DYRealTimeSDKActionLog+MYAdd.swift */,
+				C55FAB6D246E3F120049704F /* DYRealTimeSDK+LogAdd.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		C5DFD77D23B09B4400CDA4CE /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				C59B008B24D001EC006BBF18 /* DYRealTimeSDKDataParser.swift */,
+				C5DFD77E23B09B4400CDA4CE /* DYRealTimeSDKSignalKitProtocol.swift */,
+				C5DFD77F23B09B4400CDA4CE /* AgoraIMKit.swift */,
+				C5DFD78023B09B4400CDA4CE /* MQTTManager.swift */,
+				C5DFD78123B09B4400CDA4CE /* MQTTSetting.swift */,
+				C5DFD78223B09B4400CDA4CE /* TIMKit.swift */,
+			);
+			path = Signal;
+			sourceTree = "<group>";
+		};
+		C5F5301923A60364000A7751 /* DYRealTimeSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C5F530C023A60484000A7751 /* BridgingHeader.h */,
+				C5F5301A23A60364000A7751 /* AppDelegate.swift */,
+				C5F5301E23A60364000A7751 /* ViewController.swift */,
+				C5F5302323A60364000A7751 /* Assets.xcassets */,
+				C5F5302823A60364000A7751 /* Info.plist */,
+			);
+			path = DYRealTimeSDKDemo;
+			sourceTree = "<group>";
+		};
+		F177620D1B3CEA0E1A0F538D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5876376241F8BFD00EA7432 /* CoreML.framework */,
+				0F7E349C1E1F9D228AD67A6E /* Pods_CommonTarget_DYRealTimeSDK.framework */,
+				868F6BDD3E0283DB06691FB7 /* Pods_CommonTarget_DYRealTimeSDKDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C54751C523A3BBA2000EC25C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54751CF23A3BBA2000EC25C /* DYRealTimeSDK.h in Headers */,
+				C53E0F6623B0B655005E56E3 /* DYRealTimeSDKProtocol.swift in Headers */,
+				C53E0F6723B0B655005E56E3 /* DYRealTimeSDKHeaders.swift in Headers */,
+				C53E0F6823B0B655005E56E3 /* MyApp.swift in Headers */,
+				C53E0F6923B0B655005E56E3 /* DYRealTimeSDK.swift in Headers */,
+				C53E0F6A23B0B66A005E56E3 /* Data+DYAdd.swift in Headers */,
+				C53E0F6B23B0B66A005E56E3 /* String+DYAdd.swift in Headers */,
+				C53E0F6C23B0B66A005E56E3 /* Array+DYAdd.swift in Headers */,
+				C53E0F6D23B0B66A005E56E3 /* Dictionary+DYAdd.swift in Headers */,
+				C53E0F6E23B0B66A005E56E3 /* DYJsonObjectProtocol.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C54751C923A3BBA2000EC25C /* DYRealTimeSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54751D223A3BBA2000EC25C /* Build configuration list for PBXNativeTarget "DYRealTimeSDK" */;
+			buildPhases = (
+				56C0A478BF75805FE6E1D833 /* [CP] Check Pods Manifest.lock */,
+				C54751C523A3BBA2000EC25C /* Headers */,
+				C54751C623A3BBA2000EC25C /* Sources */,
+				C54751C723A3BBA2000EC25C /* Frameworks */,
+				C54751C823A3BBA2000EC25C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYRealTimeSDK;
+			productName = DYRealTimeSDK;
+			productReference = C54751CA23A3BBA2000EC25C /* DYRealTimeSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5F5301723A60364000A7751 /* DYRealTimeSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5F5302923A60364000A7751 /* Build configuration list for PBXNativeTarget "DYRealTimeSDKDemo" */;
+			buildPhases = (
+				49483ED98AAE7E98738592F4 /* [CP] Check Pods Manifest.lock */,
+				C5F5301423A60364000A7751 /* Sources */,
+				C5F5301523A60364000A7751 /* Frameworks */,
+				C5F5301623A60364000A7751 /* Resources */,
+				5AD487A5F64E33147D852426 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYRealTimeSDKDemo;
+			productName = DYRealTimeSDKDemo;
+			productReference = C5F5301823A60364000A7751 /* DYRealTimeSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C54751C123A3BBA2000EC25C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "beck tian";
+				TargetAttributes = {
+					C54751C923A3BBA2000EC25C = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					C5F5301723A60364000A7751 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = C54751C423A3BBA2000EC25C /* Build configuration list for PBXProject "DYRealTimeSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C54751C023A3BBA2000EC25C;
+			productRefGroup = C54751CB23A3BBA2000EC25C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C54751C923A3BBA2000EC25C /* DYRealTimeSDK */,
+				C5F5301723A60364000A7751 /* DYRealTimeSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C54751C823A3BBA2000EC25C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F5301623A60364000A7751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F5302423A60364000A7751 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49483ED98AAE7E98738592F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonTarget-DYRealTimeSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56C0A478BF75805FE6E1D833 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonTarget-DYRealTimeSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AD487A5F64E33147D852426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommonTarget-DYRealTimeSDKDemo/Pods-CommonTarget-DYRealTimeSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommonTarget-DYRealTimeSDKDemo/Pods-CommonTarget-DYRealTimeSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CommonTarget-DYRealTimeSDKDemo/Pods-CommonTarget-DYRealTimeSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C54751C623A3BBA2000EC25C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5DFD7B523B09B4400CDA4CE /* AgoraIMKit.swift in Sources */,
+				C5DFD7A323B09B4400CDA4CE /* DYRealTimeSDKProtocol.swift in Sources */,
+				C5DFD78D23B09B4400CDA4CE /* DYRealTimeSDK+MYAdd.swift in Sources */,
+				C5DFD79523B09B4400CDA4CE /* AgoraManager+SignalCallBack.swift in Sources */,
+				C5DFD78723B09B4400CDA4CE /* Array+DYAdd.swift in Sources */,
+				C5DFD78523B09B4400CDA4CE /* String+DYAdd.swift in Sources */,
+				C5DFD79B23B09B4400CDA4CE /* AgoraManager.swift in Sources */,
+				C5DFD79723B09B4400CDA4CE /* AgoraManager+Invoke.swift in Sources */,
+				C5DFD78923B09B4400CDA4CE /* Dictionary+DYAdd.swift in Sources */,
+				C5DFD79923B09B4400CDA4CE /* AgoraManager+CallBack.swift in Sources */,
+				C5DFD7B123B09B4400CDA4CE /* DYRealTimeSDKActionLog+MYAdd.swift in Sources */,
+				C5DFD7AF23B09B4400CDA4CE /* DYRealTimeManager+LogAdd.swift in Sources */,
+				C5DFD7B723B09B4400CDA4CE /* MQTTManager.swift in Sources */,
+				C5DFD7A523B09B4400CDA4CE /* DYRealTimeSDKHeaders.swift in Sources */,
+				C517149424D2B4A100EAAFCA /* DYRealTimeSDKPipe+Enumerate.swift in Sources */,
+				C5DFD78323B09B4400CDA4CE /* Data+DYAdd.swift in Sources */,
+				C55FAB6E246E3F120049704F /* DYRealTimeSDK+LogAdd.swift in Sources */,
+				C5DFD79323B09B4400CDA4CE /* TRTCManager.swift in Sources */,
+				C59B008C24D001EC006BBF18 /* DYRealTimeSDKDataParser.swift in Sources */,
+				C5DFD7BB23B09B4400CDA4CE /* TIMKit.swift in Sources */,
+				C5DFD7B323B09B4400CDA4CE /* DYRealTimeSDKSignalKitProtocol.swift in Sources */,
+				C5DFD7A723B09B4400CDA4CE /* MyApp.swift in Sources */,
+				C5DFD78F23B09B4400CDA4CE /* TRTCManager+CallBack.swift in Sources */,
+				C5DFD79F23B09B4400CDA4CE /* DYRealTimeManager.swift in Sources */,
+				C5DFD7A923B09B4400CDA4CE /* DYRealTimeSDK.swift in Sources */,
+				C5DFD7A123B09B4400CDA4CE /* DYRealTimeAppKeys.swift in Sources */,
+				C5DFD7AD23B09B4400CDA4CE /* DYRealTimeSDKActionLog.swift in Sources */,
+				C5DFD7AB23B09B4400CDA4CE /* DYRealTimeManager+VendoredSDKLogPath.swift in Sources */,
+				C5DFD7B923B09B4400CDA4CE /* MQTTSetting.swift in Sources */,
+				C5DFD79D23B09B4400CDA4CE /* DYRealTimeSDKCodes.swift in Sources */,
+				C5DFD78B23B09B4400CDA4CE /* DYJsonObjectProtocol.swift in Sources */,
+				C50834F524594D4D00B38BEC /* DYRealTimeSDK+TIMKit.swift in Sources */,
+				C50834F32459204100B38BEC /* DYRealTimeSDK+MQTT.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F5301423A60364000A7751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5DFD79823B09B4400CDA4CE /* AgoraManager+Invoke.swift in Sources */,
+				C5DFD78823B09B4400CDA4CE /* Array+DYAdd.swift in Sources */,
+				C5DFD7A423B09B4400CDA4CE /* DYRealTimeSDKProtocol.swift in Sources */,
+				C5DFD7B223B09B4400CDA4CE /* DYRealTimeSDKActionLog+MYAdd.swift in Sources */,
+				C5DFD79E23B09B4400CDA4CE /* DYRealTimeSDKCodes.swift in Sources */,
+				C5DFD7B423B09B4400CDA4CE /* DYRealTimeSDKSignalKitProtocol.swift in Sources */,
+				C5DFD79C23B09B4400CDA4CE /* AgoraManager.swift in Sources */,
+				C5F5301F23A60364000A7751 /* ViewController.swift in Sources */,
+				C5DFD78A23B09B4400CDA4CE /* Dictionary+DYAdd.swift in Sources */,
+				C5DFD7A823B09B4400CDA4CE /* MyApp.swift in Sources */,
+				C5DFD7B623B09B4400CDA4CE /* AgoraIMKit.swift in Sources */,
+				C517149524D2B4FA00EAAFCA /* DYRealTimeSDKPipe+Enumerate.swift in Sources */,
+				C5DFD78423B09B4400CDA4CE /* Data+DYAdd.swift in Sources */,
+				C5DFD7AC23B09B4400CDA4CE /* DYRealTimeManager+VendoredSDKLogPath.swift in Sources */,
+				C5DFD78C23B09B4400CDA4CE /* DYJsonObjectProtocol.swift in Sources */,
+				C5DFD78623B09B4400CDA4CE /* String+DYAdd.swift in Sources */,
+				C5DFD7BA23B09B4400CDA4CE /* MQTTSetting.swift in Sources */,
+				C5DFD79423B09B4400CDA4CE /* TRTCManager.swift in Sources */,
+				C5DFD79A23B09B4400CDA4CE /* AgoraManager+CallBack.swift in Sources */,
+				C55FAB6F246E3F120049704F /* DYRealTimeSDK+LogAdd.swift in Sources */,
+				C5DFD7B823B09B4400CDA4CE /* MQTTManager.swift in Sources */,
+				C5DFD7A223B09B4400CDA4CE /* DYRealTimeAppKeys.swift in Sources */,
+				C5F5301B23A60364000A7751 /* AppDelegate.swift in Sources */,
+				C5DFD79623B09B4400CDA4CE /* AgoraManager+SignalCallBack.swift in Sources */,
+				C59B008D24D001EC006BBF18 /* DYRealTimeSDKDataParser.swift in Sources */,
+				C5DFD7A023B09B4400CDA4CE /* DYRealTimeManager.swift in Sources */,
+				C5DFD7B023B09B4400CDA4CE /* DYRealTimeManager+LogAdd.swift in Sources */,
+				C5DFD7A623B09B4400CDA4CE /* DYRealTimeSDKHeaders.swift in Sources */,
+				C5DFD79023B09B4400CDA4CE /* TRTCManager+CallBack.swift in Sources */,
+				C5DFD7AA23B09B4400CDA4CE /* DYRealTimeSDK.swift in Sources */,
+				C5DFD7BC23B09B4400CDA4CE /* TIMKit.swift in Sources */,
+				C5DFD7AE23B09B4400CDA4CE /* DYRealTimeSDKActionLog.swift in Sources */,
+				C5DFD78E23B09B4400CDA4CE /* DYRealTimeSDK+MYAdd.swift in Sources */,
+				C5E667B8245955FD008E112E /* DYRealTimeSDK+TIMKit.swift in Sources */,
+				C5E667B924595617008E112E /* DYRealTimeSDK+MQTT.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C54751D023A3BBA2000EC25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C54751D123A3BBA2000EC25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C54751D323A3BBA2000EC25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3551C5239FD796F904BBB917 /* Pods-CommonTarget-DYRealTimeSDK.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9BK7Q35648;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DYRealTimeSDK/Framewoks",
+				);
+				INFOPLIST_FILE = DYRealTimeSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DYRealTimeSDK/Libraries",
+				);
+				MARKETING_VERSION = 0.0.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CocoaAsyncSocket\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CocoaMQTT\"",
+					"-framework",
+					"\"Device\"",
+					"-framework",
+					"\"Security\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dy.DYRealTimeSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C54751D423A3BBA2000EC25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6169F3506B65637C7B8C7391 /* Pods-CommonTarget-DYRealTimeSDK.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9BK7Q35648;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DYRealTimeSDK/Framewoks",
+				);
+				INFOPLIST_FILE = DYRealTimeSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DYRealTimeSDK/Libraries",
+				);
+				MARKETING_VERSION = 0.0.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CocoaAsyncSocket\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CocoaMQTT\"",
+					"-framework",
+					"\"Device\"",
+					"-framework",
+					"\"Security\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dy.DYRealTimeSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C5F5302A23A60364000A7751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60CD4E9044CD2F571BC3AE71 /* Pods-CommonTarget-DYRealTimeSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BK7Q35648;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/TXIMSDK_iOS",
+					"$(PROJECT_DIR)/Pods/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC",
+					"$(PROJECT_DIR)/DYRealTimeSDK/Framewoks",
+				);
+				INFOPLIST_FILE = DYRealTimeSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DYRealTimeSDK/Libraries",
+				);
+				MACH_O_TYPE = mh_execute;
+				MARKETING_VERSION = 0.0.3;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CocoaAsyncSocket\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CocoaMQTT\"",
+					"-framework",
+					"\"Device\"",
+					"-framework",
+					"\"Security\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dy.DYRealTimeSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = DYRealTimeSDKDemo/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5F5302B23A60364000A7751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6BAC1D888B4A5196732CB1 /* Pods-CommonTarget-DYRealTimeSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BK7Q35648;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/TXIMSDK_iOS",
+					"$(PROJECT_DIR)/Pods/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC",
+					"$(PROJECT_DIR)/DYRealTimeSDK/Framewoks",
+				);
+				INFOPLIST_FILE = DYRealTimeSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DYRealTimeSDK/Libraries",
+				);
+				MACH_O_TYPE = mh_execute;
+				MARKETING_VERSION = 0.0.3;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CocoaAsyncSocket\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CocoaMQTT\"",
+					"-framework",
+					"\"Device\"",
+					"-framework",
+					"\"Security\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dy.DYRealTimeSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = DYRealTimeSDKDemo/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C54751C423A3BBA2000EC25C /* Build configuration list for PBXProject "DYRealTimeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54751D023A3BBA2000EC25C /* Debug */,
+				C54751D123A3BBA2000EC25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54751D223A3BBA2000EC25C /* Build configuration list for PBXNativeTarget "DYRealTimeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54751D323A3BBA2000EC25C /* Debug */,
+				C54751D423A3BBA2000EC25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5F5302923A60364000A7751 /* Build configuration list for PBXNativeTarget "DYRealTimeSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F5302A23A60364000A7751 /* Debug */,
+				C5F5302B23A60364000A7751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C54751C123A3BBA2000EC25C /* Project object */;
+}
