@@ -42,9 +42,10 @@ extension DYRealTimeSDKActionLog {
         return dateFormatter.string(from: date)
     }
     
-    class func log(_ actionName: String,
-                   _ param: [String: Any]?,
-                   _ level: String) {
+    class func log(actionName: String,
+                   param: [String: Any]?,
+                   type: String,
+                   level: DDLogLevel = .all) {
         
         let content = param?.jsonString ?? ""
         
@@ -66,7 +67,7 @@ extension DYRealTimeSDKActionLog {
         }
         
         var elements = ["【\(dateStr)】",
-            "【\(level)】",
+            "【\(type)】",
             "【\(sdkName)】",
             "【App版本 = \(MyApp.version)】",
             "【\(actionName)】",
@@ -80,24 +81,24 @@ extension DYRealTimeSDKActionLog {
         
         let messageStr = "\n" + elementsString + "\n"
         
-        let message = DDLogMessage(message: messageStr, level: .all, flag: .info, context: 0, file: "", function: "", line: 0, tag: nil, options: [.copyFile, .copyFunction], timestamp: Date())
+        let message = DDLogMessage(message: messageStr, level: level, flag: .info, context: 0, file: "", function: "", line: 0, tag: nil, options: [.copyFile, .copyFunction], timestamp: Date())
         
         fileLogger?.loggerQueue.async {
             fileLogger?.log(message: message)
         }
     }
     
-    class func level(ofAction action: String) -> String {
-        let level: String
+    class func type(ofAction action: String) -> String {
+        let type: String
         if action.contains("失败") ||
             action.contains("失去") ||
             action.contains("错误") ||
             action.contains("断开"){
-            level = "ERROR"
+            type = "ERROR"
         } else {
-            level = "NORMAL"
+            type = "NORMAL"
         }
-        return level
+        return type
     }
     
     private static var manager: DYSDKLogManager? = {

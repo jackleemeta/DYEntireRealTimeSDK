@@ -40,6 +40,7 @@ class TRTCManager: DYRealTimeManager {
     override func destroy(_ callBack: ((Bool)->())? = nil) {
         super.destroy(callBack)
         leaveRtcRoom()
+        trtc?.setGSensorMode(.uiAutoLayout)
         didRtcLeaveCallBack = { isSuccess in
             TRTCCloud.destroySharedIntance()
             callBack?(isSuccess)
@@ -98,6 +99,11 @@ class TRTCManager: DYRealTimeManager {
         trtc?.muteLocalAudio(status)
     }
     
+    override func muteRemoteAudioStream(_ mute: Bool, userId:String) {
+        super.muteRemoteAudioStream(mute, userId: userId)
+        trtc?.muteRemoteAudio(userId, mute: mute)
+    }
+    
     override var baseInformation: DYRealTimeSDKBaseInformation {
         var bi = DYRealTimeSDKBaseInformation()
         bi.thirdRtcSDKType = .trtc
@@ -121,7 +127,7 @@ class TRTCManager: DYRealTimeManager {
         encParam.videoBitrate = 200
         
         trtc?.setVideoEncoderParam(encParam)
-        trtc?.setVideoEncoderRotation(._180)
+        trtc?.setGSensorMode(.disable)
         
     }
     

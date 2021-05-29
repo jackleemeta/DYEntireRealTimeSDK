@@ -9,7 +9,7 @@ abstract_target 'CommonTarget' do
     pod 'CocoaLumberjack/Swift', '3.6.1'
     pod 'Device'
     pod 'CocoaMQTT', '1.1.3'
-    pod 'TXLiteAVSDK_TRTC', '7.9.21016'
+    pod 'TXLiteAVSDK_TRTC', '7.9.21032'
     pod 'TXIMSDK_iOS', '4.7.2'
     pod 'AgoraRtcEngine_iOS', '2.9.0.105'
     pod 'AgoraRtm_iOS', '1.3.0'

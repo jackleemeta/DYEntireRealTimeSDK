@@ -39,7 +39,7 @@ public final class DYRealTimeSDK {
      */
     public class var baseInformation: DYRealTimeSDKBaseInformation {
         var bi = manager?.baseInformation ?? DYRealTimeSDKBaseInformation()
-        bi.sdkVersion = "0.0.3"
+        bi.sdkVersion = "0.0.4"
         return bi
     }
     
@@ -66,7 +66,7 @@ public final class DYRealTimeSDK {
                 delegate: DYRealTimeSDKProtocol) {
         
         DYRealTimeSDKActionLog.timeOffset = settingConfig.timeOffSet
-        
+        DYRealTimeSDKActionLog.allowHighFrequencyLog = settingConfig.allowHighFrequencyLog
         Self.manager = generateManager(sdk: sdk,
                                        authenticationConfig: authenticationConfig,
                                        userConfig: userConfig,
@@ -336,6 +336,14 @@ extension DYRealTimeSDK {
     public func muteLocalAudioStream(_ status: Bool) {
         Self.manager?.muteLocalAudioStream(status)
     }
+    
+    /**
+     静音远端音频
+     */
+    public func muteRemoteAudioStream(_ mute: Bool, userId:String) {
+        Self.manager?.muteRemoteAudioStream(mute, userId: userId)
+    }
+
 }
 
 // MARK: - 日志API

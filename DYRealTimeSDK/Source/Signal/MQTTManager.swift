@@ -77,20 +77,16 @@ extension MQTTManager {
         DYRealTimeSDKActionLog.log(.joinchannel, pipe: .mqtt, param: param)
         DYRealTimeSDKActionLog.ddLogInfo("通讯通道 = \(DYRealTimeSDKPipe.mqtt.rawValue), param = \(param)")
         
-        guard let username = currentSetting.username, let password = currentSetting.password else {
-            return
-        }
-        
         guard let cocoaMqtt = cocoaMqtt else {
             DDLogInfo("MQTT连接失败，reason: cocoaMqtt初始化失败，cocoaMqtt实例不存在")
             return
         }
         
-        cocoaMqtt.username = username
-        cocoaMqtt.password = password
+        cocoaMqtt.username = currentSetting.username
+        cocoaMqtt.password = currentSetting.password
         
-        DDLogInfo("<<<<<<\(username)>>>>>>")
-        DDLogInfo("<<<<<<\(password)>>>>>>")
+        DDLogInfo("<<<<<<\(cocoaMqtt.username ?? "")>>>>>>")
+        DDLogInfo("<<<<<<\(cocoaMqtt.password ?? "")>>>>>>")
         
         _ = cocoaMqtt.connect()
         

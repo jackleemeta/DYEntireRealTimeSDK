@@ -1,4 +1,3 @@
-
 # DYRealTimeSDK
 
 ## 简介
@@ -27,6 +26,7 @@ DYRealTimeSDK(实时音视频SDK)
  ```
 git "https://github.com/jackleemeta/DYEntireRealTimeSDK.git"  >= 0.0.1
  ```
+
 > ### 需要手动引入MQTT等依赖库
 
 
@@ -120,11 +120,13 @@ realTimeSDK?.switch(to: user,
 
 - SDK主动销毁
 
-1. 统一处理：
-- mqtt断开连接
-- TIM登出
+1、统一行为：
 
-2. 各个模式下的处理
+> mqtt断开连接
+
+> TIM登出
+
+2、各个模式下的行为：
 
 > 声网模式：
 > 
@@ -133,6 +135,7 @@ realTimeSDK?.switch(to: user,
 > AgoraRtmKit登出、sdk销毁
 
 或
+
 > 腾讯模式：
 >
 > TRTC登出、sdk销毁
@@ -167,7 +170,7 @@ DYRealTimeSDK.sortedTRTCLogFileInfos
 
 # 当前三方音视频SDK版本
 - AgoraRtcEngine_iOS(2.9.0.105)
-- TXLiteAVSDK_TRTC(7.2.8979)
+- TXLiteAVSDK_TRTC(7.2.8980)
 
 # 在XCode12，Carthage编译失败问题及临时解决方案
 - 相关issus: https://github.com/Carthage/Carthage/issues/3019

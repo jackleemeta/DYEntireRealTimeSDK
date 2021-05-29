@@ -54,6 +54,7 @@ enum DYRealTimeSDKActionName: String {
 public class DYRealTimeSDKActionLog {
     
     public static var timeOffset: Int64?
+    public static var allowHighFrequencyLog = true
     public static var sdk: DYRealTimeSDKType?
     static var filePath: String?
     static var fileName: String?
@@ -68,15 +69,22 @@ public class DYRealTimeSDKActionLog {
     ///   - action: 事件名
     ///   - pipe: 通道：rtc signal mqtt
     ///   - param: 参数
-    class func log(_ action: DYRealTimeSDKActionName, pipe: DYRealTimeSDKPipe, param: [String: Any]? = nil) {
-        let pipeStr = pipe.describeString//rtc
-        let actionStr = action.rawValue//加入房间
+    ///   - level: 日志等级
+    class func log(_ action: DYRealTimeSDKActionName,
+                   pipe: DYRealTimeSDKPipe,
+                   param: [String: Any]? = nil,
+                   level: DDLogLevel = .all) {
+        let pipeStr = pipe.describeString
+        let actionStr = action.rawValue
         let value = pipeStr + "-" + actionStr
-        log(value, param, level(ofAction: action.rawValue))
+        log(actionName: value,
+            param: param,
+            type: type(ofAction: action.rawValue),
+            level: level)
     }
     
     class func ddLogInfo(_ message: @autoclosure () -> String,
-                         level: DDLogLevel = DDDefaultLogLevel,
+                         level: DDLogLevel = .all,
                          context: Int = 0,
                          file: StaticString = #file,
                          function: StaticString = #function,
@@ -92,7 +100,11 @@ public class DYRealTimeSDKActionLog {
             string = "【腾讯系】" + message()
         }
         
-        DDLogInfo(string, file:file, function: function, line: line)
+        DDLogInfo(string,
+                  level: level,
+                  file:file,
+                  function: function,
+                  line: line)
     }
     
 }

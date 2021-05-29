@@ -126,6 +126,11 @@ class AgoraManager: DYRealTimeManager {
         _ = agora?.muteLocalAudioStream(status)
     }
     
+    override func muteRemoteAudioStream(_ mute: Bool, userId:String) {
+        super.muteRemoteAudioStream(mute, userId: userId)
+        _ = agora?.muteRemoteAudioStream(UInt(userId) ?? 0, mute: mute)
+    }
+    
     override var baseInformation: DYRealTimeSDKBaseInformation {
         var bi = DYRealTimeSDKBaseInformation()
         bi.thirdRtcSDKType = .agora

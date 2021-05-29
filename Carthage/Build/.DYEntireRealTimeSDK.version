@@ -8,13 +8,13 @@
   "tvOS" : [
 
   ],
-  "commitish" : "d40c6518b471a9c1490af04e185da4bc1032ddec",
+  "commitish" : "0.0.3",
   "iOS" : [
     {
-      "hash" : "791e993fe6edf205b1a592166067b56fdb27c7522d52a2f2d52acb495d7a3d14",
+      "hash" : "80cd35317258b013763a964d3ec5713f6d93f0544b9272138f5792da3a69f867",
       "name" : "DYRealTimeSDK",
       "linking" : "static",
-      "swiftToolchainVersion" : "5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)"
+      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
     }
   ]
 }

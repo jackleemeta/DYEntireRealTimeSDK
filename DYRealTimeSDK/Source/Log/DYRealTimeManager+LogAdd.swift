@@ -6,6 +6,8 @@
 //  Copyright © 2019 beck tian. All rights reserved.
 //
 
+import CocoaLumberjack
+
 // MARK: - 日志
 extension DYRealTimeManager {
     
@@ -158,8 +160,17 @@ extension DYRealTimeManager {
         let param: [String: Any] = ["roomId": userConfig.roomId,
                                     "uid": uid,
                                     "quality": quality.rawValue]
-        DYRealTimeSDKActionLog.log(.network_quality, pipe: .rtc, param: param)
-        DYRealTimeSDKActionLog.ddLogInfo("quality = \(quality.rawValue), param = \(param)")
+        
+        let aLevel: DDLogLevel
+        if DYRealTimeSDKActionLog.allowHighFrequencyLog {
+            aLevel = .all
+        } else {
+            aLevel = .off
+        }
+        
+        DYRealTimeSDKActionLog.log(.network_quality, pipe: .rtc, param: param, level: aLevel)
+        DYRealTimeSDKActionLog.ddLogInfo("quality = \(quality.rawValue), param = \(param)",
+                                         level: aLevel)
     }
     
     func log_rtc_video_enabled(enabled: Bool, uid: String) {
@@ -217,6 +228,10 @@ extension DYRealTimeManager {
     
     func log_muteLocalAudioStream(_ status: Bool) {
         DYRealTimeSDKActionLog.ddLogInfo("status = \(status)")
+    }
+    
+    func log_muteRemoteAudioStream(mute: Bool, userId:String) {
+        DYRealTimeSDKActionLog.ddLogInfo("mute = \(mute), userId = \(userId)")
     }
     
     func log_audioMixingFinishedCallBack() {

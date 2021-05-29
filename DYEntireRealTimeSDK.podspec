@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name = "DYEntireRealTimeSDK"
-    s.version = "0.0.3"
+    s.version = "0.0.4"
     s.summary = "本SDK封装了多厂商的音视频SDK和相应的即时通讯SDK"
     s.description = "1. 简化和统一了各厂商服务注册和接口调用方式 2. 支持在各厂商SDK之间安全、高效地调度(目前支持声网、腾讯) 3. 多条通道并行发送自定义消息和消息去重 4. 封装了日志模块（厂商log，自定义log，DDLog），用于数据跟踪和后续分析 5. 解决多SDK引入和编译问题"
     s.homepage = "https://github.com/jackleemeta/DYEntireRealTimeSDK.git"
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     s.dependency 'CocoaLumberjack/Swift', '3.6.1'
     s.dependency 'Device'
     s.dependency 'CocoaMQTT', '1.1.3'
-    s.dependency 'TXLiteAVSDK_TRTC', '7.9.21016'
+    s.dependency 'TXLiteAVSDK_TRTC', '7.9.21032'
     s.dependency 'TXIMSDK_iOS', '4.7.2'
     s.dependency 'AgoraRtcEngine_iOS', '2.9.0.105'
     s.dependency 'AgoraRtm_iOS', '1.3.0'

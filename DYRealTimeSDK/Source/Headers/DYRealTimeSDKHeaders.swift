@@ -78,6 +78,8 @@ public struct DYRealTimeSettingConfig {
     */
     public var messgeTypeOfLeftRoom: NSObject?
     public var timeOffSet: Int64?
+    /// 是否允许高频log及显示在控制台
+    public var allowHighFrequencyLog = true
     public init() {}
 }
 

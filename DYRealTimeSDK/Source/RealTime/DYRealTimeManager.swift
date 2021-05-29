@@ -197,6 +197,10 @@ class DYRealTimeManager: NSObject {
         log_muteLocalAudioStream(status)
     }
     
+    func muteRemoteAudioStream(_ mute: Bool, userId:String) {
+        log_muteRemoteAudioStream(mute: mute, userId: userId)
+    }
+    
     var allPipesOfWillJoin: DYRealTimeSDKPipe {
         return []
     }
